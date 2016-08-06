@@ -1,0 +1,269 @@
+<!DOCTYPE html> 
+<html> 
+<!--Assignment 10 index.html TEMPLATE-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--MY THEME LINKS-->
+    <link rel="stylesheet" href="themes/my_theme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<!--END THEME LINKS-->    
+     
+	<title>Single page template</title> 
+<!--	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+
+    
+    <style>
+        #navBarID a {
+            text-align: center;
+        }
+    </style>
+    
+</head> 
+
+<body data-theme="a"> 
+    
+
+
+<!--STEP 1 Home Page, Solutions Page, Contact Page DONE-->
+<!--HOME PAGE-->
+<div data-role="page" id="homePageID" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>HOME PAGE</h1>
+	</div><!-- /header -->
+    <!--STEP 5: solutions page, list view widget, with click to descriptive dialog-->
+    <div data-role="navbar" id="navBarID" data-theme="a">
+       <ul data-role="listview">
+         <li><a href="#homePageID" class="ui-btn-active ui-state-persist ui-icon-home ui-btn-icon-top">HOME</a></li>
+         <li><a href="#solutionsPageID" class="ui-btn ui-icon-edit ui-btn-icon-top">SOLUTIONS</a></li>
+         <li><a href="#contactPageID" class="ui-icon-bullets ui-btn-icon-top">CONTACT</a></li>
+      </ul>
+    </div><!-- /navbar -->
+	<div data-role="content" data-theme="a">	
+		<p>Welcome</p>		
+		<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+        
+        <div data-role="collapsible" data-theme="a">
+            <h3>Client Testimonials</h3>
+            <p><i>Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</i></p>
+            <p>
+            Iona Ford<br>
+            President<br>
+            Chevy Dealers Association</p>
+            <p><i>Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.</i></p>
+            <p>
+            Robin Banks<br>
+            CEO<br>
+            Profits Financial, Inc.</p>
+        </div>
+	</div><!-- /content -->	
+    <div data-role="footer" data-position="fixed" data-theme="a">
+       <h4>Fixed Position Footer Content</h4>
+    </div><!-- /footer -->   
+</div><!-- /page -->
+
+<!--START OF NEW ASSIGNMENT 10 MOBILE PAGE HTML CODE-->
+
+<!--STEP 1: A 3-page website: home, solutions, contact-->
+<!--SOLUTIONS PAGE-->
+        
+ <div data-role="page" id="solutionsPageID" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>SOLUTIONS PAGE</h1>
+	</div><!--dr-header-->    
+     
+    <!--navbar    -->
+    <div data-role="navbar" id="navBarID" data-theme="a">
+       <ul data-role="listview">
+         <li><a href="#homePageID" class="ui-icon-home ui-btn-icon-top"     >HOME</a></li>
+         <li><a href="#solutionsPageID" class="ui-btn-active ui-state-persist ui-icon-edit ui-btn-icon-top">SOLUTIONS</a></li>
+         <li><a href="#contactPageID" class="ui-icon-bullets ui-btn-icon-top"  >CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+     
+<!--STEP 6-->
+    
+	<div data-role="content" data-theme="a">	
+
+<ul data-role="listview" data-theme="a">        
+		<li><a href="#vProspect" data-rel="dialog">vProspect 2.0</a></li>
+
+<div data-role="page" data-dialog="true" id="vProspect" data-theme="a">
+Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience. vProspect can help your business:
+
+Define your target audience and competition.
+
+Research your competition and your target audience's behavior, needs, technical know-how level, etc.
+
+Establish a conceptual and visual identity that corresponds to the defined direction of the company.
+
+Ensure consistency across all media.
+
+Establish corporate guidelines for cohesiveness of any future developments.
+
+Define and/or re-defining your service and/or product offerings.
+
+Define expansion plans and strategies.
+
+Implement Search Engine Optimization of all Online materials.
+</div>
+
+
+
+<li><a href="#vConvert" data-rel="dialog">vConvert 2.0</a></li>
+
+Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level. vConvert can help your business:
+
+Build a visual and functional user front end that focuses exclusively on providing an exceptional user experience while conveying company, service and product information.
+
+Cause the desired emotional response in a user to facilitate conversion to a client.
+
+Build sites that move beyond merely conveying information. They advertise, motivate, excite and inspire. Users are more likely to remember and recommend your site.
+
+Research your target audience's behavior, needs, technical know-how and level, etc.
+
+Develop any applicable back-end programs to facilitate user interaction with the company and offerings on a highly functional level to allow any kind of online transactions and a completely centralized information collection and access point, accessible from any location.
+
+Create an architecture to display the site content and information in a logical and easy to access manner. Facilitating thereby the desired ease, for the user to find what they are looking for quickly and easily. Allowing the user to focus on the subject at hand rather than searching for information on the site.
+
+
+
+
+<li><a href="#vRetain" data-rel="dialog">vRetain 1.0</a></li>
+
+Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues. vRetain can help your business:
+
+Streamline existing business infrastructures by utilizing technology for automation, information centralization, and information sharing among all business units and departments, as well as efficient prospect & customer tracking and interaction within the company.
+
+Collect crucial information, data and statistics that allow a company to keep in touch with users in a very customized, highly targeted way.
+
+Analyze site visitor behavior through traffic analysis, usability studies and interactive polling. Recommending and making site and application adjustments to improve usability and user experience.
+</ul>        
+	</div><!-- /content -->
+    <div data-role="footer" data-position="fixed" data-theme="a">
+       <h4>Footer content</h4>
+    </div><!-- /footer --> 
+</div><!-- /solutions page --> 
+
+<!--STEP 1: A 3-page website: home, solutions, contact-->    
+<!--CONTACT PAGE    -->
+<div data-role="page" id="contactPageID" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>CONTACT PAGE</h1>
+	</div><!-- /header -->
+    
+    <!--navbar    -->
+    <div data-role="navbar" id="navBarID" data-theme="a">
+       <ul data-role="listview">
+         <li><a href="#homePageID" class="ui-icon-home ui-btn-icon-top"     >HOME</a></li>
+         <li><a href="#solutionsPageID" class="ui-icon-edit ui-btn-icon-top">SOLUTIONS</a></li>
+         <li><a href="#contactPageID" class="ui-btn-active ui-state-persist ui-icon-bullets ui-btn-icon-top">CONTACT</a></li>
+      </ul>
+    </div>
+    <!-- /navbar --> 
+    <div data-role="main" class="ui-content" data-theme="a">
+    <form method="post" action="#pageone" data-ajax="false">
+    <label for="name">Name : <span>*</span></label>
+    <input type="text" name="name" id="name" placeholder="Name">
+    <label for="email">Email: <span>*</span></label>
+    <input type="email" id="email" name="email" placeholder="Email"/>
+    <fieldset >
+        <label for="speed">Product Interest</label>
+        <select name="speed" id="speed">
+            <option>vProspect 2.0</option>
+            <option>vConvert 2.0</option>
+            <option>vRetain 1.0</option>
+        </select>
+    </fieldset>
+    <label for="info">Questions/Comments:</label>
+    <textarea name="addinfo" id="info" placeholder="Message"></textarea>
+    <input type="submit" data-inline="true" value="Submit" data-theme="a">
+    </form>
+    </div>
+    <!-- /content -->	
+    <div data-role="footer" data-position="fixed">
+       <h4>Footer content</h4>
+    </div><!-- /footer --> 
+</div><!-- /contact page -->    
+       
+<!--STEP 2 A Header and fixed position footer on each page-->    
+<!--CHECK PAGES FOR THIS-->
+       
+<!--STEP 3 A 3-item navigation menu widget: Home, Solutions, and Contact.-->    
+<!--located at top of body-->
+     
+<!--STEP 4 The home page should include: Welcome text and Testimonials-->    
+<!--located in home page-->
+    
+<!--STEP 5 Overview in a list view widget, in the solutions page, with click to descriptive dialog-->
+<!--located above-->
+    
+<!--STEP 6 Contact Page Form: Name, Email, Product Interest, Questions, Submit Button-->    
+    
+<!--STEP 7 A unique theme should be applied to: Header, Footer, Nav Menu-->    
+      
+<!--END OF NEW ASSIGNMENT 10 MOBILE PAGE HTML CODE-->    
+
+  
+    
+<script>
+//COMM644 (New Assignment 10)
+//Assignment 11, Part 1
+//The Mobile Vecta Corp. Website (10 points)   
+//In this part of the assignment you will practice working with jQuery Mobile. Specifically you will
+//use jQuery Mobile to build the mobile version of the Vecta Corp. website. To finish this part of the
+//assignment make sure that your version of the mobile Vecta Corp. website includes the following:
+
+//Step 1.A 3-page website that includes pages.. DONE
+// a. home 
+// b. solutions 
+// c. contact
+
+//Step 2.Each web page should include DONE
+// a.	a header and.. 
+// b.	a fixed position footer.
+
+//Step 3.A 3-item navigation menu widget should be used and it should appear at the top of each page
+//       with the following: DONE
+// a.navigation menu items: Home, Solutions, and Contact. 
+// b.A unique icon should appear above each item.
+// c.Depending on the page that the user is on, that navigation menu item should appear active.
+
+//Step 4.The home page should include   DONE
+// a.the welcome text and..
+// b.the client testimonials should be placed within a collapsible set widget.
+
+//Step 5.The overview of 
+// a. each solution should appear within a list view widget in the solutions page.
+// b. When the user clicks on a solution, a dialog should appear with a much more descriptive version
+//    of that solution.     NEED TO DO
+
+$( document ).ready(function() {
+    $.mobile.changePage( "#vProspect", { role: "dialog" } );    
+});
+    
+
+//Step 6.The contact page should include a form with several form fields including  DONE
+// a. Name (text field), 
+// b. Email (text field), 
+// c. Product Interest (selectmenu widget), and..
+// d. Questions/Comments (textarea field).
+// e. A submit button (button widget) should also appear.
+
+//Step 7.A unique theme should be applied to your   NEED TO DO
+// a. headers, 
+// b. footer, and.. 
+// c. navigation menu. 
+
+//NOTE: Do not use the default theme swatches. I want you to use Themeroller to design your own unique,
+//      custom theme.
+   
+</script>     
+</body>
+</html>
